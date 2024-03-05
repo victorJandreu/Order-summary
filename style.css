@@ -1,0 +1,172 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+.red-hat {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+:root{
+    --c-pale-blue: hsl(225, 100%, 94%);
+    --c-bright-blue: hsl(245, 75%, 52%);
+    --c-pale-white: hsl(225, 100%, 98%);
+    --c-desaturated-blue: hsl(224, 23%, 55%);
+    --c-dark-blue: hsl(223, 47%, 23%);
+    --size-normal: 1em;
+    --size-large: 1.5em;
+    --size-smal: 0.9em;
+    --border-radious-card: 20px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family:"Red Hat Display", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+/* main, div, section...  */
+
+main{
+    width: 66%;
+    background-color: white;
+    border-radius: var(--border-radious-card);
+    max-width: 430px;
+}
+
+.container{
+    padding: 1.7rem;
+}
+
+.plan{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0.5rem 1rem;
+    margin: 1.3rem 0;
+    background-color: var(--c-pale-white);
+    border-radius: 10px;
+    font-size: var(--size-smal);
+}
+
+/* h1, h2... p   */
+
+h1, h2{
+    color: var(--c-dark-blue);
+    font-weight: 900;
+}
+
+h1{
+    margin-top: -0.4rem;
+    font-size: var(--size-large);
+}
+
+h2{
+    font-size: var(--size-normal);
+    margin-bottom: 0.1rem;
+}
+
+p{
+    font-size: var(--size-normal);
+    color: var(--c-desaturated-blue);
+    font-weight: 500;
+}
+
+.container p {
+    padding: 0 1rem;
+}
+
+.price p{
+    margin-top: 0;
+}
+
+/* img, svg, a....  */
+
+main > img{
+    display: block;
+    width: 100%;
+    border-radius: var(--border-radious-card) var(--border-radious-card) 0 0;
+    margin-bottom: 0;
+   
+}
+
+.plan a{
+    margin-left: auto;
+    color: var(--c-bright-blue);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.plan a:hover{
+    color: var(--c-desaturated-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn, .cancel{
+    transition: all 0.3s ease;
+}
+
+.btn{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    background-color: var(--c-bright-blue);
+    color: white;
+    font-size: var(--size-normal);
+    font-weight: 700;
+    padding: 0.8rem 0;
+    border-radius: 10px;
+    box-shadow: 0px 12px 10px 3px var(--c-pale-blue);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--c-desaturated-blue);
+}
+
+.cancel{
+    display: block;
+    text-decoration: none;
+    color: var(--c-desaturated-blue);
+    font-weight: 700;
+    font-size: var(--size-smal);
+    width: fit-content;
+    margin: 1.2rem auto;
+}
+
+.cancel:hover{
+    color: var(--c-dark-blue);
+    font-weight: 900;
+}
+
+
+@media (min-width: 650px) {
+    body{
+        background-image: url("./images/pattern-background-desktop.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        --size-large: 1.8em;
+        --size-normal: 1.2em;
+        --size-smal: 1em;
+    }
+  
+}
+
